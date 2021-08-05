@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <img >
-    <!-- <HelloWorld/> -->
-    <div>Hoeveel geld heeft u aan swapfiets verspilt?</div>
-    <br/>
+    <h4>Hoeveel geld heeft u aan swapfiets verspilt?</h4>
+    <div></div>
   <div>{{ money }} €</div>
   </div>
 </template>
@@ -18,12 +16,10 @@ export default {
       startDate: '2020-2-11'
     }
   },
-  computed: {
-  },
   mounted: function () {
     window.setInterval(() => {
-      this.money = ((Date.now() - new Date(this.startDate).getTime()) * this.monthlyBill / 1000 / 60 / 60 / 24 / 30.5).toFixed(6)
-    }, 1000)
+      this.money = ((Date.now() - new Date(this.startDate).getTime()) * this.monthlyBill / 1000 / 60 / 60 / 24 / 30.5).toFixed(7)
+    }, 100)
   }
 }
 </script>
@@ -38,10 +34,21 @@ html, body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+
   color: white;
+  
+  /* text in center  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* space on screen */
   margin: 10vh 0;
   height: 80vh;
+
+  /* background image  */
   background-image: url("./assets/ruben.jpeg");
   background-repeat:no-repeat;
   background-position: center center;
