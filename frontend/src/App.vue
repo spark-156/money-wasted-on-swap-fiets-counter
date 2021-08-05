@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <h4>Hoeveel geld heeft u (RUBEN) aan swapfiets verspilt?</h4>
-    <div>{{ money }} €</div>
+    <h4>Hoeveel geld heeft Sjuben aan swapfiets verspilt?</h4>
+    {{ money }} €
 
     <div>
       <label for="monthlyBill">Monthly Bill</label>
@@ -77,6 +77,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0.5vh;
+  display: none;
 }
 
 #app > div > input {
