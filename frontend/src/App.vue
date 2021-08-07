@@ -22,7 +22,7 @@ export default {
     return {
       money: 0,
       monthlyBill: 13.5,
-      startDate: '2020-2-11'
+      startDate: '2020/2/11'
     }
   },
   mounted: function () {
