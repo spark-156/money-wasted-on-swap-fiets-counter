@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h4>Hoeveel geld heeft Sjuben aan swapfiets verspilt?</h4>
-    {{ money }} €
+    € {{ money }}
 
     <div>
       <label for="monthlyBill">Monthly Bill</label>
