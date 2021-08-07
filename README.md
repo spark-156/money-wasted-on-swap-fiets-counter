@@ -12,3 +12,8 @@ Or
 cd frontend && npm run dev
 ```
 
+Run prod env with docker by running:
+```
+docker-compose up --build
+```
+Must have docker and docker-compose installed
